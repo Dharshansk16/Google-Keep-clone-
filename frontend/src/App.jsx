@@ -6,7 +6,6 @@ import Register from "./pages/Register";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
-import Form from "./components/Form";
 
 function Logout() {
   localStorage.clear();
@@ -26,7 +25,6 @@ export default function App() {
           path="/"
           element={
             <ProtectedRoute>
-              //Wrapping the components that needs Authorization
               <Home />
             </ProtectedRoute>
           }

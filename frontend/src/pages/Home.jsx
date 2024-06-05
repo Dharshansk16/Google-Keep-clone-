@@ -1,7 +1,16 @@
+import NavBar from "../components/NavBar";
+
 function Home() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Home</h1>
+    <div className="container- mx-auto w-full bg-gradient-to-r from-slate-900 to-violet-700">
+      <NavBar />
+      <div
+        style={{
+          background:
+            "url(http://www.transparenttextures.com/patterns/cubes.png)",
+        }}
+        className="container-fluid mx-auto h-screen"
+      ></div>
     </div>
   );
 }

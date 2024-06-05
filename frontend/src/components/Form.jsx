@@ -59,7 +59,7 @@ function Form({ route, method }) {
             </span>
           </label>
           <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gradient-to-r from-slate-600 to-gray-600"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-400 leading-tight focus:outline-none focus:shadow-outline bg-gradient-to-r from-slate-600 to-gray-600"
             id="username"
             type="text"
             placeholder="Username"
@@ -77,7 +77,7 @@ function Form({ route, method }) {
             </span>
           </label>
           <input
-            className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline bg-gradient-to-r from-slate-600 to-gray-600"
+            className="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-400 mb-3 leading-tight focus:outline-none focus:shadow-outline bg-gradient-to-r from-slate-600 to-gray-600"
             id="password"
             type="password"
             placeholder="******************"
@@ -114,7 +114,12 @@ function Form({ route, method }) {
           </a> */}
         </div>
       </form>
-      <p className="text-center text-gray-500 text-xs">&copy;2024.</p>
+      <p
+        className="text-center  text-gray-500 text-xs"
+        style={{ fontFamily: "sans-serif" }}
+      >
+        copyright &copy; 2024
+      </p>
     </div>
   );
 }

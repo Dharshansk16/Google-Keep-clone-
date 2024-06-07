@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Link } from "react-router-dom";
 import HighlightIcon from "@mui/icons-material/Highlight";
+import LogoutIcon from "@mui/icons-material/Logout";
 
 function NavBar() {
   return (
@@ -16,9 +17,12 @@ function NavBar() {
       <Container fluid>
         <Navbar.Brand as={Link} to="/">
           <HighlightIcon
-            sx={{ fontSize: 50, color: "purple", paddingBottom: "10px" }}
+            sx={{ fontSize: 50, color: "#8845f4", paddingBottom: "10px" }}
           />
-          <span className="bg-clip-text text-4xl text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
+          <span
+            style={{ font: "icon", fontFamily: "cursive" }}
+            className="bg-clip-text text-4xl text-transparent bg-gradient-to-r from-purple-500 to-pink-500"
+          >
             Keeper
           </span>
         </Navbar.Brand>
@@ -29,9 +33,6 @@ function NavBar() {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            {/* <Nav.Link as={Link} to="/">
-              Home
-            </Nav.Link> */}
             {/* <Nav.Link href="#action2">Link</Nav.Link>
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
@@ -46,6 +47,14 @@ function NavBar() {
             <Nav.Link href="#" disabled>
               Link
             </Nav.Link>*/}
+            <Nav.Link>
+              <Link to={"/logout"}>
+                <LogoutIcon style={{ fontSize: "24px", color: "#8845f4" }} />
+                <span className="bg-clip-text text-sm text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
+                  Logout
+                </span>
+              </Link>
+            </Nav.Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
